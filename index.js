@@ -31,7 +31,7 @@ async function run() {
   let connection;
 
   try {
-    connection = await oracledb.getConnection({ user: "migueltejedamatos", password: mypw, connectionString: "localhost/orcl" });
+    connection = await oracledb.getConnection({ user: "myuser", password: mypw, connectionString: "localhost/orcl" });
     
     } catch (err) {
     console.error(err);
@@ -41,7 +41,7 @@ run()
 //------------------------------------------
 /*
 todo: async/await, validate routers' parameters, set up REST client, 
-add request logger, add test env
+add request logger, add test env, project structure
 */
 
 
